@@ -11,6 +11,9 @@ class Estudiante : public Persona {
 		
 		//notas parciales
 		float notas[2];
+
+		//cursos matriculados
+		string * cursos;
 		
 	public:
 		//constructor por defecto

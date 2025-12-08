@@ -13,6 +13,7 @@ Estudiante :: Estudiante()
 	count++; 
 	notas[0] = 0;
 	notas[1] = 0;
+	cursos = nullptr;
 }
 
 //constructor con parametros
@@ -22,6 +23,7 @@ Estudiante :: Estudiante(const string& nombre)
 	count++; 
 	notas[0] = 0;
 	notas[1] = 0;
+	cursos = nullptr;
 }
 	
 //constructor copias	
@@ -31,6 +33,7 @@ Estudiante :: Estudiante (const Estudiante &e)
 	count++;
 	notas[0] = e.notas[0];
 	notas[1] = e.notas[1];
+	cursos = nullptr;
 }
 
 //mostrar info		

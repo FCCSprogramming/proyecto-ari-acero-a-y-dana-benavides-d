@@ -16,5 +16,8 @@ int main(){
 	cout << "8. Cargar datos" << endl;
 	cout << "9. Buscar un registro" << endl;
 	cout << "10. Listar datos registrados" << endl;
+	
+	Estudiante e("Dana");
+	e.mostrarInfo();
 	return 0;
 }
