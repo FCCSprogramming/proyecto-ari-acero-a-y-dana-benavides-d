@@ -3,16 +3,19 @@
 
 using namespace std;
 
+//contador de los ids
 int Estudiante :: count = 1;
 
-Estudiante :: Estudiante()
+//constructor por defecto
+Estudiante :: Estudiante() 
 	: Persona(), id(count)
 { 
 	count++; 
 	notas[0] = 0;
 	notas[1] = 0;
 }
-		
+
+//constructor con parametros
 Estudiante :: Estudiante(const string& nombre)
 	: Persona(nombre), id(count)
 { 
@@ -20,7 +23,8 @@ Estudiante :: Estudiante(const string& nombre)
 	notas[0] = 0;
 	notas[1] = 0;
 }
-		
+	
+//constructor copias	
 Estudiante :: Estudiante (const Estudiante &e)
 	: Persona(e), id(e.id) 
 {
@@ -28,15 +32,18 @@ Estudiante :: Estudiante (const Estudiante &e)
 	notas[0] = e.notas[0];
 	notas[1] = e.notas[1];
 }
-		
+
+//mostrar info		
 void Estudiante :: mostrarInfo() const {
 	cout << "ID: "<< this->id <<" | Nombre: " << this->nombre << " | Promedio: " << calcularDesempeno();
 }
-		
+
+//calcular promedio		
 float Estudiante :: calcularDesempeno() const {
 	return ( notas[0] + notas[1] )/2.0f;
 }
-		
+
+//agregar notas		
 void Estudiante :: agregarNota(){
 	int op;
 	float no;
