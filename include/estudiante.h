@@ -2,6 +2,7 @@
 #define ESTUDIANTE_H
 
 #include "persona.h"
+#include "curso.h"
 class Estudiante : public Persona {
 	private:
 		//contador de los ids
@@ -10,7 +11,7 @@ class Estudiante : public Persona {
 		int id;
 
 		//cursos matriculados
-		string * cursos;
+		Curso * cursos;
 		
 	public:
 		//constructor por defecto
