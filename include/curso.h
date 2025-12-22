@@ -10,7 +10,7 @@ class Curso {
         string id;
 
     private:
-        static int c_estudiantes_matriculados;
+        int c_estudiantes_matriculados = 0;
         int c_creditos;
         Estudiante * estudiantes_matriculados;
 
