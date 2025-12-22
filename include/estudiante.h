@@ -8,9 +8,6 @@ class Estudiante : public Persona {
 		static int count;
 		
 		int id;
-		
-		//notas parciales
-		float notas[2];
 
 		//cursos matriculados
 		string * cursos;

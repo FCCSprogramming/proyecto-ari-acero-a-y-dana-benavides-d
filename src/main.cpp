@@ -4,6 +4,11 @@
 #include "../include/estudiante.h"
 using namespace std;
 
+/*
+g++ main.cpp persona.cpp estudiante.cpp -o programa.exe
+./programa.exe
+*/
+
 int main(){
 	cout << "=== Sistema de Gestion Academica ===" << endl;
 	cout << "1. Registrar estudiante" << endl;
@@ -17,7 +22,5 @@ int main(){
 	cout << "9. Buscar un registro" << endl;
 	cout << "10. Listar datos registrados" << endl;
 	
-	Estudiante e("Dana");
-	e.mostrarInfo();
 	return 0;
 }
