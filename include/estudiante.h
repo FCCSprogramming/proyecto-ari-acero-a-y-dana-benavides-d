@@ -5,7 +5,6 @@
 #include "curso.h"
 class Estudiante : public Persona {
 	private:
-		
 		int id;
 
 		//cursos matriculados

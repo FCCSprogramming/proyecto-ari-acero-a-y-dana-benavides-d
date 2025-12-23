@@ -3,30 +3,24 @@
 
 using namespace std;
 
-//contador de los ids
-int Estudiante :: count = 1;
-
 //constructor por defecto
 Estudiante :: Estudiante() 
-	: Persona(), id(count)
+	: Persona()
 { 
-	count++; 
 	cursos = nullptr;
 }
 
 //constructor con parametros
 Estudiante :: Estudiante(const string& nombre)
-	: Persona(nombre), id(count)
+	: Persona(nombre)
 { 
-	count++; 
 	cursos = nullptr;
 }
 	
 //constructor copias	
 Estudiante :: Estudiante (const Estudiante &e)
-	: Persona(e), id(e.id) 
+	: Persona(e)
 {
-	count++;
 	cursos = nullptr;
 }
 
