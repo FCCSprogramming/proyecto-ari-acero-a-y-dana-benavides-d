@@ -9,20 +9,20 @@ using namespace std;
 class Sistema
 {
 private:
-    static int c_estudiantes;
-    static int c_cursos;
+    int c_estudiantes;
+    int c_cursos;
     Estudiante *e;
     Curso *c;
 
 public:
-    Sistema(int c_estudiantes, int c_cursos);
+    Sistema();
     ~Sistema();
     //op 1
     void registrar_estudiante();
 
     //op 2
     void registrar_curso();
-    
+
     //op 3
     void inscribir_e_cursos();
 
