@@ -5,13 +5,12 @@
 #include "curso.h"
 class Estudiante : public Persona {
 	private:
-		//contador de los ids
-		static int count;
 		
 		int id;
 
 		//cursos matriculados
 		Curso * cursos;
+		int cursos_matriculados = 0;
 		
 	public:
 		//constructor por defecto
