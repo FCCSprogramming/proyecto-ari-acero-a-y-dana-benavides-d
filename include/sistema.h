@@ -1,7 +1,6 @@
 #ifndef SISTEMA_H
 #define SISTEMA_H
 
-#include "sistema.h"
 #include "estudiante.h"
 #include "curso.h"
 #include <iostream>
@@ -11,8 +10,8 @@ class Sistema
 private:
     int c_estudiantes;
     int c_cursos;
-    Estudiante *e;
-    Curso *c;
+    Estudiante **e;
+    Curso **c;
 
 public:
     Sistema();
@@ -46,6 +45,8 @@ public:
 
     //op 10
     void listar_registrados();
+
+    ~Sistema();
 };
 
 #endif

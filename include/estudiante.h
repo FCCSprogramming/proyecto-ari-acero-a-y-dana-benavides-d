@@ -2,7 +2,9 @@
 #define ESTUDIANTE_H
 
 #include "persona.h"
-#include "curso.h"
+
+class Curso;
+
 class Estudiante : public Persona {
 	private:
 		int id;
@@ -29,6 +31,8 @@ class Estudiante : public Persona {
 		
 		//agregar notas	
 		void agregarNota();
+
+		~Estudiante();
 		
 };
 

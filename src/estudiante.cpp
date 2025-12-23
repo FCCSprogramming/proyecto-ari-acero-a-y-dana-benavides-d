@@ -19,7 +19,18 @@ Estudiante :: Estudiante(const string& nombre, const string& carrera)
 	
 //constructor copias	
 Estudiante :: Estudiante (const Estudiante &e)
-	: Persona(e), carrera(e.carrera), id(e.id), cursos(e.cursos), cursos_matriculados(e.cursos_matriculados) {}
+	: Persona(e), carrera(e.carrera), id(e.id), cursos_matriculados(e.cursos_matriculados) 
+	{
+		if (e.cursos != nullptr){
+			cursos = new Curso[cursos_matriculados];
+			for (int i = 0; i < cursos_matriculados; i++){
+				*(cursos + i) = *(e.cursos + i);
+			}
+
+		} else {
+			cursos = nullptr;
+		}
+	}
 
 //mostrar info		
 void Estudiante :: mostrarInfo() const {
@@ -38,4 +49,7 @@ void Estudiante :: agregarNota(){
 		
 };
 
+Estudiante::~Estudiante() {
+    delete[] cursos;
+}
 

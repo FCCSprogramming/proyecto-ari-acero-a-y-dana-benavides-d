@@ -1,9 +1,11 @@
 #ifndef CURSO_H
 #define CURSO_H
 
-#include "estudiante.h"
 #include <iostream>
 using namespace std;
+
+class Estudiante;
+
 class Curso {
     protected:
         string nombre;
