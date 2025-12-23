@@ -11,18 +11,15 @@ Estudiante :: Estudiante()
 }
 
 //constructor con parametros
-Estudiante :: Estudiante(const string& nombre)
-	: Persona(nombre)
+Estudiante :: Estudiante(const string& nombre, const string& carrera)
+	: Persona(nombre), carrera(carrera)
 { 
 	cursos = nullptr;
 }
 	
 //constructor copias	
 Estudiante :: Estudiante (const Estudiante &e)
-	: Persona(e)
-{
-	cursos = nullptr;
-}
+	: Persona(e), carrera(e.carrera), id(e.id), cursos(e.cursos), cursos_matriculados(e.cursos_matriculados) {}
 
 //mostrar info		
 void Estudiante :: mostrarInfo() const {

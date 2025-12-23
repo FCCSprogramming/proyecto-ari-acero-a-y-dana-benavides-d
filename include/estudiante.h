@@ -6,7 +6,7 @@
 class Estudiante : public Persona {
 	private:
 		int id;
-
+		string carrera;
 		//cursos matriculados
 		Curso * cursos;
 		int cursos_matriculados = 0;
@@ -16,7 +16,7 @@ class Estudiante : public Persona {
 		Estudiante();
 		
 		//constructor con parametros
-		Estudiante(const string& nombre);
+		Estudiante(const string& nombre, const string& carrera);
 		
 		//constructor copia
 		Estudiante (const Estudiante &e);
